@@ -1,8 +1,9 @@
 package pl.gda.wsb;
 
-public class Phone<string> {
-    public string Model='Samsung';
-    public int version=8;
-    public int power=3500;
+public class Phone {
+    public String producer;
+    public String model;
+    public String operationSystem;
+    public Double screenSize;
 
 }
