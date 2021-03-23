@@ -5,6 +5,34 @@ public class Animal {
     public String name;
     public Double weight;
 
-    public Animal(String dog) {
+    static public final Double DEFAULT_ANIMAL_WEIGHT = 1.0;
+
+    Animal(String species) {
+        this.species = species;
+
+        switch (this.species) {
+            case "Dog" -> this.weight = 20.0;
+            case "Cat" -> this.weight = 5.0;
+            case "Cow" -> this.weight = 600.0;
+            default -> this.weight = DEFAULT_ANIMAL_WEIGHT;
+        }
+    }
+
+    public void feed() {
+        if(weight > 0){
+            this.weight += 1;
+            System.out.println("dzięki za jedzenie. Moja waga jest teraz: " + this.weight);
+        }else {
+            System.out.println("za późno, przepraszam");
+        }
+    }
+
+    public void takeForAWalk() {
+        if(this.weight > 0){
+            this.weight -= 1;
+            System.out.println("Dzięki za spacer, moja waga jest teraz" + this.weight);
+        } else {
+            System.out.println("Nie można chodzić po ulicy z martwym zwierzęciem!");
+        }
     }
 }
