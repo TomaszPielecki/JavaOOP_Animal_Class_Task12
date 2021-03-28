@@ -5,4 +5,5 @@ public class Human {
     String lastName;
     Integer age;
     String sex;
+    Car Car;
 }
