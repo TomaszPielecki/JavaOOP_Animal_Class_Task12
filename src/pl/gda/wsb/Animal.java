@@ -5,15 +5,15 @@ public class Animal {
     public String name;
     public Double weight;
 
-    static public final Double DEFAULT_ANIMAL_WEIGHT = 1.0;
+    static public final Double DEFAULT_ANIMAL_WEIGHT = 5.0;
 
     Animal(String species) {
         this.species = species;
 
         switch (this.species) {
             case "Dog" -> this.weight = 20.0;
-            case "Cat" -> this.weight = 5.0;
-            case "Cow" -> this.weight = 600.0;
+            case "Sheep" -> this.weight = 5.0;
+            case "Horse" -> this.weight = 1000.0;
             default -> this.weight = DEFAULT_ANIMAL_WEIGHT;
         }
     }
