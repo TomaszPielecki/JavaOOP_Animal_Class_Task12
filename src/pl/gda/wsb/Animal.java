@@ -12,7 +12,7 @@ public class Animal {
 
         switch (this.species) {
             case "Dog" -> this.weight = 20.0;
-            case "Sheep" -> this.weight = 5.0;
+            case "Sheep" -> this.weight = 50.0;
             case "Horse" -> this.weight = 1000.0;
             default -> this.weight = DEFAULT_ANIMAL_WEIGHT;
         }
