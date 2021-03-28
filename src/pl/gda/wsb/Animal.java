@@ -5,7 +5,7 @@ public class Animal {
     public String name;
     public Double weight;
 
-    static public final Double DEFAULT_ANIMAL_WEIGHT = 5.0;
+    static public final Double DEFAULT_ANIMAL_WEIGHT = 20.0;
 
     Animal(String species) {
         this.species = species;
