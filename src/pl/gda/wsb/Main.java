@@ -114,5 +114,19 @@ public class Main {
             x=x+1;
         }
 
+        Car car1 = new Car();
+        car1.Brand="Ford";
+        car1.Model="Focus";
+        car1.Producer = "General Motor";
+        car1.Power=120;
+        car1.Color="Zielony";
+
+        Car car2 = new Car();
+        car2.Brand="Toyota";
+        car2.Model="t25";
+        car2.Producer = "Toyota Motor";
+        car2.Power=140;
+        car2.Color="Bordowy";
+
     }
 }
