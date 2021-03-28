@@ -126,6 +126,14 @@ public class Main {
             car2.Producer = "Toyota Motor";
             car2.Power=140;
             car2.Color="Bordowy";
+            //przypisanie osob do samochodu.
+            os1.Car=car1;
+            os2.Car=car2;
+            // dokonczyc dopisywanie wartosci
+            System.out.println("Imie = " + os1.firstName+",Nazwisko = " + os1.lastName+",Marka Samochodu = " + os1.Car.Brand+",Model = " + os1.Car.Model+",Producent = " + os1.Car.Producer+",KM = " + os1.Car.Power+",Kolor = " + os1.Car.Color);
+            System.out.println("Imie = " + os2.firstName+",Nazwisko = " + os2.lastName+",Marka Samochodu = " + os2.Car.Brand+",Model = " + os2.Car.Model+",Producent = " + os2.Car.Producer+",KM = " + os2.Car.Power+",Kolor = " + os2.Car.Color);
+
+
         }
 
 
