@@ -5,5 +5,6 @@ public class Human {
     String lastName;
     Integer age;
     String sex;
+    Animal Animal;
     Car Car;
 }
