@@ -5,5 +5,7 @@ public class Phone {
     public String model;
     public String operationSystem;
     public Double screenSize;
-
+    public String toString() {// toString() method
+        return producer + " " + model + " " + operationSystem+ " " + screenSize;
+    }
 }

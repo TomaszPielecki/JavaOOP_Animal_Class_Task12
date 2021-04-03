@@ -35,4 +35,7 @@ public class Animal {
             System.out.println("Nie można chodzić po ulicy z martwym zwierzęciem!");
         }
     }
+    public String toString() {// toString() method
+        return species + " " + name + " " + weight;
+    }
 }
