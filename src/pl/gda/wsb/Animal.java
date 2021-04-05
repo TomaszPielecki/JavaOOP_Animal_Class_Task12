@@ -1,9 +1,9 @@
 package pl.gda.wsb;
 
 public class Animal {
-    public String species;
-    public String name;
-    public Double weight;
+     String species;
+     String name;
+     Double weight;
 
     static public final Double DEFAULT_ANIMAL_WEIGHT = 20.0;
 

@@ -1,12 +1,12 @@
-package pl.gda.wsb;
+package pl.gda.wsb.devices;
 
 public class Car {
 
-    String Brand;
-    String Model;
-    String Producer;
-    Integer Power;
-    String Color;
+    public String Brand;
+    public String Model;
+    public String Producer;
+    public Integer Power;
+    public String Color;
 
 
     // porownanie w obrebie klasy Car

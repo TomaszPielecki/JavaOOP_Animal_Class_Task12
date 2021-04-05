@@ -1,5 +1,8 @@
 package pl.gda.wsb;
 
+import pl.gda.wsb.devices.Car;
+import pl.gda.wsb.devices.Phone;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -169,6 +172,8 @@ public class Main {
         System.out.println(tel);
         System.out.println(tel1);
         System.out.println("-----------------Pakage----Zad 8------------------");
+        System.out.println("Paczki utworzone pakage - devices");
+
         
     }
 }
