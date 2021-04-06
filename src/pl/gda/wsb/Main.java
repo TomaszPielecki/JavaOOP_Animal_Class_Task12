@@ -2,6 +2,7 @@ package pl.gda.wsb;
 
 import pl.gda.wsb.devices.Car;
 import pl.gda.wsb.devices.Phone;
+import java.util.*;
 
 public class Main {
 
@@ -23,7 +24,9 @@ public class Main {
         System.out.println("Name = " + dog1.name + ",Waga = " + dog1.weight + ",Rasa = " + dog1.species);
         System.out.println("-------Human--------");
 
+
         Human os1 = new Human();
+        os1.setSalary(5500.0);
         os1.firstName = "Adam";
         os1.lastName = "Kowalski";
         os1.age = 20;
@@ -32,8 +35,10 @@ public class Main {
         Human os2 = new Human();
         os2.firstName = "Dagmara";
         os2.lastName = "Kowalska";
+        os2.setSalary(5000.0);
         os2.age = 21;
         os2.sex = "Female";
+
         // wypisanie informacji z Klasy Human
         System.out.println("Imie = " + os1.firstName + ",Nazwisko = " + os1.lastName + ",Wiek = " + os1.age + ",Płeć = " + os1.sex);
         System.out.println("Imie = " + os2.firstName + ",Nazwisko = " + os2.lastName + ",Wiek = " + os2.age + ",Płeć = " + os2.sex);
@@ -95,12 +100,14 @@ public class Main {
         Human os3 = new Human();
         os3.firstName = "Andrzej";
         os3.lastName = "Kowalski";
+        os3.setSalary(4000.0);
         os3.age = 24;
         os3.sex = "Male";
 
         Human os4 = new Human();
         os4.firstName = "Daria";
         os4.lastName = "Kowalska";
+        os4.setSalary(6000.0);
         os4.age = 25;
         os4.sex = "Female";
 
@@ -123,15 +130,17 @@ public class Main {
 
         Car car1 = new Car();
         car1.Brand = "Ford";
-        car1.Model = "Focus";
+        car1.Model = "Focus IV";
         car1.Producer = "General Motor";
+        car1.setValue(55000.0);
         car1.Power = 120;
         car1.Color = "Zielony";
 
         Car car2 = new Car();
         car2.Brand = "Toyota";
-        car2.Model = "t25";
+        car2.Model = "t27";
         car2.Producer = "Toyota Motor";
+        car2.setValue(60000.0);
         car2.Power = 140;
         car2.Color = "Bordowy";
         //przypisanie osob do samochodu.
@@ -173,7 +182,13 @@ public class Main {
         System.out.println(tel1);
         System.out.println("-----------------Pakage----Zad 8------------------");
         System.out.println("Paczki utworzone pakage - devices");
-
-        
+        System.out.println("-----------------Gettery i Settery----Zad 9-------");
+        System.out.println("osoba 1 zarabia  -> "+ os1.getSalary());
+        System.out.println("osoba 2 zarabia  -> "+ os2.getSalary());
+        System.out.println("osoba 3 zarabia  -> "+ os3.getSalary());
+        System.out.println("osoba 4 zarabia  -> "+ os4.getSalary());
+        System.out.println("-----------------Gettery i Settery----Zad 10------");
+        System.out.println("Samochod Ford Focus IV kosztuje  -> "+ car1.getValue());
+        System.out.println("Samochod Toyota t27 kosztuje     ->"+ car2.getValue());
     }
 }

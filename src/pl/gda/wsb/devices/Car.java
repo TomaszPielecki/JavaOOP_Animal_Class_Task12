@@ -7,7 +7,15 @@ public class Car {
     public String Producer;
     public Integer Power;
     public String Color;
+    private double value;
 
+    // if I only extract data for salary then create constructor and set and get for salary because that's all I need
+    public void setValue(double value) {
+        this.value = value;
+    }
+    public double getValue() {
+        return value;
+    }
 
     // porownanie w obrebie klasy Car
     @Override
@@ -21,7 +29,7 @@ public class Car {
         return false;
 
     }
-    // HashCode wychodzi tak samo jak Equals
+    // HashCode wchodzi tak samo jak Equals
     @Override
     public int hashCode() {
         return Brand.hashCode() + Model.hashCode() + Producer.hashCode();
@@ -30,11 +38,3 @@ public class Car {
         return Brand+" "+Model+" "+Producer+" "+Power+" "+Color;
     }
 }
-
-
-
-
-
-
-
-
