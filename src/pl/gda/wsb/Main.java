@@ -171,7 +171,7 @@ public class Main {
         System.out.println("car2.equals(car2): " + car2.equals(car2)); // true
         System.out.println("car1.equals(car1): " + car1.equals(car1)); // true
 
-        System.out.println("-----------------ToString Car---------------------");
+        System.out.println("-----------------ToString All Class---------------");
         //toString
         System.out.println(car1);
         System.out.println(car2);
@@ -191,7 +191,7 @@ public class Main {
         System.out.println("osoba 4 zarabia  -> " + os4.getSalary());
 
 
-        if(os4.getSalary >= 0 || os3.getSalary < 0 ) System.out.println("Bład! Nie mozna samowolnie podniesc wypłaty");
+        if(os4.getSalary >= 0 || os3.getSalary < 0 ) System.out.println("Bład! Nie mozna samowolnie podniesc sobie wypłaty");
         else
         {
             System.out.println("Nowe dane zostały wysłane do systemu księgowego!");
@@ -199,8 +199,8 @@ public class Main {
             System.out.println("ZUS i US już wiedzą o zmianie wypłaty i nie ma sensu ukrywać dochodu!");
         }
 
-        os3.setSalary(-750.0);
-        os4.setSalary(1000.0);
+        os3.setSalary(-680.0);
+        os4.setSalary(1400.0);
 
 
 
