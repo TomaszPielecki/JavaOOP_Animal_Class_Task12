@@ -17,6 +17,7 @@ public class Car {
         return value;
     }
 
+
     // porownanie w obrebie klasy Car
     @Override
     public boolean equals(Object obj) {

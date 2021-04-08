@@ -2,7 +2,8 @@ package pl.gda.wsb;
 
 import pl.gda.wsb.devices.Car;
 import pl.gda.wsb.devices.Phone;
-import java.util.*;
+
+import java.util.Date;
 
 public class Main {
 
@@ -107,7 +108,7 @@ public class Main {
         Human os4 = new Human();
         os4.firstName = "Daria";
         os4.lastName = "Kowalska";
-        os4.setSalary(6000.0);
+        os4.setSalary(2500.0);
         os4.age = 25;
         os4.sex = "Female";
 
@@ -183,12 +184,40 @@ public class Main {
         System.out.println("-----------------Pakage----Zad 8------------------");
         System.out.println("Paczki utworzone pakage - devices");
         System.out.println("-----------------Gettery i Settery----Zad 9-------");
-        System.out.println("osoba 1 zarabia  -> "+ os1.getSalary());
-        System.out.println("osoba 2 zarabia  -> "+ os2.getSalary());
-        System.out.println("osoba 3 zarabia  -> "+ os3.getSalary());
-        System.out.println("osoba 4 zarabia  -> "+ os4.getSalary());
+
+        System.out.println("osoba 1 zarabia  -> " + os1.getSalary());
+        System.out.println("osoba 2 zarabia  -> " + os2.getSalary());
+        System.out.println("osoba 3 zarabia  -> " + os3.getSalary());
+        System.out.println("osoba 4 zarabia  -> " + os4.getSalary());
+
+
+        if(os4.getSalary >= 0 || os3.getSalary < 0 ) System.out.println("Bład! Nie mozna samowolnie podniesc wypłaty");
+        else
+        {
+            System.out.println("Nowe dane zostały wysłane do systemu księgowego!");
+            System.out.println("Konieczność odebrania aneksu do umowy od pani Hani z kadr!");
+            System.out.println("ZUS i US już wiedzą o zmianie wypłaty i nie ma sensu ukrywać dochodu!");
+        }
+
+        os3.setSalary(-750.0);
+        os4.setSalary(1000.0);
+
+
+
         System.out.println("-----------------Gettery i Settery----Zad 10------");
-        System.out.println("Samochod Ford Focus IV kosztuje  -> "+ car1.getValue());
-        System.out.println("Samochod Toyota t27 kosztuje     ->"+ car2.getValue());
+
+        System.out.println("Samochod Ford Focus IV kosztuje  -> " + car1.getValue());
+        System.out.println("Samochod Toyota t27 kosztuje     ->" + car2.getValue());
+
+        if (os1.getSalary() >= car2.getValue()) {
+            System.out.println("Udalo sie kupic za gotowke.");
+        } else if (os1.getSalary() >= car2.getValue() / 12.0) {
+            System.out.println("Udalo sie kupic auto na kredyt.");
+        } else {
+            System.out.println("Nie stac cie na ten samochod");
+        }
+        os1.Car = car1;
+        System.out.println("Udalo sie kupic auto na kredyt."+ os1.Car);
+
     }
 }
